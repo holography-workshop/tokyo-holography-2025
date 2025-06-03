@@ -22,7 +22,12 @@ html, body {
 
 #header-container {
   margin: 0 auto;
-  width: 694px;
+  width: 100%;
+  height: 200px; /* 必要に応じて調整 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 header {

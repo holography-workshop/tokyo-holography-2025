@@ -53,12 +53,14 @@ h1 a:hover {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 0.2em;
+    text-align: center;  /* 中央揃え（任意） */
 }
 
 .event-location {
     font-size: 18px;
     color: #f3f2eb;
     margin-top: 0;
+    text-align: center;  /* 中央揃え（任意） */
 }
 
 h2 {

@@ -20,6 +20,14 @@ header {
   padding: 40px 0; /* 高さを調整（overlayなしの代わりにpaddingで） */
 }
 
+.intro-paragraph {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin: 1.5em 0;
+  padding: 0 0.5em;
+}
+
 h1 {
   font-size: 36px;
   font-weight: bold;

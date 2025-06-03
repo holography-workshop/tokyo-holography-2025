@@ -39,7 +39,7 @@ h1 a:hover {
 }
 /* Added：Date and Place */
 .event-date {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 0.2em;
 }

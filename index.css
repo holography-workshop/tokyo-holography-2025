@@ -1,16 +1,12 @@
 @charset "UTF-8";
 
-html, body {
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: "游ゴシック Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   line-height: 1.6;
   font-size: 16px;
   background-color: #fff;
-}
-
-#outer {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -22,18 +18,18 @@ html, body {
 
 #header-container {
   margin: 0 auto;
-  width: 100%;
-  height: 200px; /* 必要に応じて調整 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  width: 694px;
 }
 
 header {
   background: url("img/universe_space04.png") center center / cover no-repeat;
   color: #fff;
   padding: 40px 0;
+  position: relative;
+}
+
+#head-inner {
+  text-align: center;
 }
 
 h1 {
@@ -62,17 +58,21 @@ h1 {
   margin-top: 0;
 }
 
-#content-wrapper {
-  margin: 0 auto;
-  width: 694px;
+nav.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 10px 0;
 }
 
-main {
-  color: #333;
+nav.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
-#inner {
-  padding: 20px 0 0 0;
+nav.navbar a:hover {
+  text-decoration: underline;
 }
 
 .intro-paragraph {
@@ -99,6 +99,19 @@ h4 {
   font-size: 16px;
 }
 
+#content-wrapper {
+  margin: 0 auto;
+  width: 694px;
+}
+
+main {
+  color: #333;
+}
+
+#inner {
+  padding: 20px 0 0 0;
+}
+
 ul {
   margin: 0 0 0 1em;
   padding: 0;
@@ -118,23 +131,35 @@ img {
   border: 0;
 }
 
+hr {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #ccc;
+  height: 1px;
+}
+
+a {
+  font-weight: normal;
+}
+
 footer {
   font-size: 15px;
   text-align: center;
+  margin-top: 60px;
   padding: 20px 0;
-  background-color: #214555;
-  color: #f3e6d2;
-  margin-top: auto;
+  background-color: #f1f1f1;
 }
 
 #organisers {
-  margin-top: 40px;
+  margin-top: 60px;
 }
+
 #organisers h2 {
   font-size: 22px;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #999;
 }
+
 #organisers ul {
   list-style: disc;
   margin-left: 1.5em;
@@ -143,7 +168,12 @@ footer {
   color: #333;
 }
 
-/* responsive */
+blockquote {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10px;
+}
+
 @media screen and (max-width: 767px) {
   #header-container {
     margin: 0;
@@ -157,11 +187,6 @@ footer {
   #content-wrapper {
     margin: 0;
     width: 100%;
-  }
-
-  main {
-    width: 100%;
-    color: #333;
   }
 
   #inner {
@@ -184,8 +209,14 @@ footer {
     font-size: 14px;
   }
 
-#organisers {
-  margin-top: 40px;
-  margin-bottom: 80px; /* ← ここを追加または増加 */
-}
+  #organisers {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav.navbar a {
+    display: inline-block;
+    margin: 5px;
+  }
 }

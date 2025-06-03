@@ -184,9 +184,8 @@ footer {
     font-size: 14px;
   }
 
-  #organisers {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+#organisers {
+  margin-top: 40px;
+  margin-bottom: 60px; /* ← ここを追加または増加 */
+}
 }

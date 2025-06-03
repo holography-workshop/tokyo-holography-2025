@@ -28,7 +28,7 @@ html, body {
 header {
   background: url("img/universe_space04.png") center center / cover no-repeat;
   color: #fff;
-  padding: 100px 0 80px 0; /* 上下に十分な余白を追加 */
+  padding: 60px 0 40px 0;  /* 少し縮めた */
 }
 
 #head-inner {
@@ -36,11 +36,11 @@ header {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
-  line-height: 1.8;
+  line-height: 1.6; /* 少し詰める */
 }
 
 h1 {
-  font-size: 48px; /* 大きめに変更 */
+  font-size: 42px;  /* 少し小さく */
   font-weight: bold;
   margin: 0.2em 0;
   color: #f3e6d2;
@@ -48,7 +48,7 @@ h1 {
 }
 
 .description {
-  font-size: 22px;
+  font-size: 20px;  /* 若干小さく */
   color: #f3f2eb;
   margin: 0.3em 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);

@@ -1,12 +1,23 @@
 @charset "UTF-8";
 
-body {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: "游ゴシック Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   line-height: 1.6;
   font-size: 16px;
   background-color: #fff;
+}
+
+#outer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#wrapper {
+  flex: 1;
 }
 
 #header-container {
@@ -17,15 +28,7 @@ body {
 header {
   background: url("img/universe_space04.png") center center / cover no-repeat;
   color: #fff;
-  padding: 40px 0; /* 高さを調整（overlayなしの代わりにpaddingで） */
-}
-
-.intro-paragraph {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #333;
-  margin: 1.5em 0;
-  padding: 0 0.5em;
+  padding: 40px 0;
 }
 
 h1 {
@@ -54,6 +57,27 @@ h1 {
   margin-top: 0;
 }
 
+#content-wrapper {
+  margin: 0 auto;
+  width: 694px;
+}
+
+main {
+  color: #333;
+}
+
+#inner {
+  padding: 20px 0 0 0;
+}
+
+.intro-paragraph {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin: 1.5em 0;
+  padding: 0 0.5em;
+}
+
 h2 {
   font-size: 22px;
   margin: 1.5em 0 0.5em 0;
@@ -68,19 +92,6 @@ h3 {
 
 h4 {
   font-size: 16px;
-}
-
-#content-wrapper {
-  margin: 0 auto;
-  width: 694px;
-}
-
-main {
-  color: #333;
-}
-
-#inner {
-  padding: 20px 0 0 0;
 }
 
 ul {
@@ -102,69 +113,15 @@ img {
   border: 0;
 }
 
-hr {
-  border-width: 1px 0 0 0;
-  border-style: solid;
-  border-color: #ccc;
-  height: 1px;
-}
-
-a {
-  font-weight: normal;
-}
-
-aside {}
-
-#middle-inner {
-  padding: 20px 0 20px 0;
-}
-
-.side-title {
-  padding: 7px 16px 7px 16px;
-  background-color: #f1f1f1;
-  color: #333;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.side {
-  margin: 0 0 10px 0;
-  padding: 2px 8px 8px 7px;
-  background-color: #fcfcfc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.side ul {
-  margin: 0 0 0 10px;
-  padding: 0;
-}
-
-.side li {
-  list-style: none;
-  margin-bottom: 0.5em;
-}
-
-.side li a {
-  text-decoration: none;
-  color: #214555;
-}
-
-.side li a:hover {
-  text-decoration: underline;
-}
-
 footer {
   font-size: 15px;
-  height: 100px;
-  clear: both;
   text-align: center;
-  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #214555;
+  color: #f3e6d2;
+  margin-top: auto;
 }
 
-/* organisers section */
 #organisers {
   margin-top: 40px;
 }
@@ -179,12 +136,6 @@ footer {
   padding-left: 0;
   line-height: 1.6;
   color: #333;
-}
-
-blockquote {
-  border: 1px solid #ccc;
-  padding: 5px;
-  margin: 10px;
 }
 
 /* responsive */
@@ -210,14 +161,6 @@ blockquote {
 
   #inner {
     padding: 20px 10px 0 10px;
-  }
-
-  aside {
-    width: 100%;
-  }
-
-  #middle-inner {
-    padding: 10px 10px 20px 10px;
   }
 
   h1 {

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Title and Abstract | Holography in Tokyo 2025</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="index.css" rel="stylesheet"/>
+</head>
+<body><div id="header-placeholder"></div>
+<div id="outer">
+<div id="wrapper">
+
+
+<div id="content-wrapper">
+<main>
+<div id="inner">
+<h2>Title and Abstract</h2>
+<p>TBA</p>
+</div>
+</main>
+</div>
+</div>
+<footer>Holography in Tokyo 2025</footer>
+</div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+</body>
+</html>

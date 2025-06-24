@@ -1,46 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Registration | Holography in Tokyo 2025</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+<meta charset="utf-8"/>
+<title>Registration | Holography in Tokyo 2025</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="index.css" rel="stylesheet"/>
 </head>
-<body>
+<body><div id="header-placeholder"></div>
 <div id="outer">
-  <div id="wrapper">
-    <header>
-      <div class="header-overlay">
-        <div id="header-container">
-          <div id="head-inner">
-            <h1>Holography in Tokyo 2025</h1>
-            <p class="description event-date">July 9 - July 13, 2025</p>
-            <p class="description event-location">University of Tokyo</p>
-          </div>
-        </div>
-      </div>
-    </header>
+<div id="wrapper">
 
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="program.html">Program</a></li>
-        <li><a href="registration.html">Registration</a></li>
-        <li><a href="information.html">Information</a></li>
-        <li><a href="venue.html">Workshop Venue</a></li>
-      </ul>
-    </nav>
 
-    <div id="content-wrapper">
-      <main>
-        <div id="inner">
-          <h2>Registration</h2>
-          <p>TBA</p>
-        </div>
-      </main>
-    </div>
-  </div>
-  <footer>Holography in Tokyo 2025</footer>
+<div id="content-wrapper">
+<main>
+<div id="inner">
+<h2>Registration</h2>
+<p>TBA</p>
 </div>
+</main>
+</div>
+</div>
+<footer>Holography in Tokyo 2025</footer>
+</div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
 </body>
 </html>

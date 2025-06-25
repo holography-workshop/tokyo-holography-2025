@@ -21,7 +21,9 @@
 </main>
 </div>
 </div>
-<footer>Holography in Tokyo 2025</footer>
+<div id="footer-container"></div>
+<script>fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer-container").innerHTML = data);</script>
+
 </div>
 
 <script>

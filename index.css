@@ -103,6 +103,14 @@ nav.navbar a:hover {
   padding: 0 0.5em;
 }
 
+h12 {
+  font-size: 30px;
+  margin: 1.5em 0 0.5em 0;
+  padding: 4px 0;
+  border-bottom: 1px solid #999;
+}
+
+
 h2 {
   font-size: 22px;
   margin: 1.5em 0 0.5em 0;

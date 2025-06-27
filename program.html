@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>Program | Holography in Tokyo 2025</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="index.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <title>Program - Holography in Tokyo 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
 </head>
-<body><div id="header-placeholder"></div>
+<body>
 <div id="outer">
-<div id="wrapper">
+  <div id="wrapper">
+    <!-- ヘッダー読み込み -->
+    <div id="header-placeholder"></div>
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-placeholder").innerHTML = data);
+    </script>
 
+    <div id="content-wrapper">
+      <main>
+        <div id="inner">
+          <h2>Program</h2>
+          
 
-<div id="content-wrapper">
-<main>
-<div id="inner">
-<h2>Program</h2>
-<p>TBA</p>
-</div>
-</main>
-</div>
-</div>
-<div id="footer-container"></div>
-<script>fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer-container").innerHTML = data);</script>
+          <!-- スケジュール画像表示 -->
+          <div style="text-align: center; margin-top: 2em;">
+            <img src="img/program.png" alt="Workshop Schedule" style="max-width: 100%; height: auto;" />
+          </div>
+          <p><strong>All times are in JST (Japan Standard Time).</strong></p>        </div>
+      </main>
+    </div>
 
+    <!-- フッター読み込み -->
+    <div id="footer-container"></div>
+    <script>
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    </script>
+  </div>
 </div>
-
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    });
-</script>
 </body>
 </html>

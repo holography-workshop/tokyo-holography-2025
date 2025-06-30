@@ -1,37 +1,159 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>Title and Abstract | Holography in Tokyo 2025</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="index.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <title>Talk Titles and Abstracts - Holography in Tokyo 2025</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .talk { margin-bottom: 2em; }
+    .session-day { margin-top: 3em; margin-bottom: 1em; }
+    .talk p { margin: 0.3em 0; }
+  </style>
 </head>
-<body><div id="header-placeholder"></div>
+<body>
 <div id="outer">
-<div id="wrapper">
+  <div id="wrapper">
+    <div id="header-placeholder"></div>
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-placeholder").innerHTML = data);
+    </script>
+    <div id="content-wrapper">
+      <main>
+        <div id="inner">
+          <h2>Talk Titles and Abstracts</h2>
+          <p><strong>All times are shown in JST (Japan Standard Time)</strong></p>
 
+          <h3 class="session-day">July 9 (Wed)</h3>
+          <div class="talk">
+            <p><strong>10:00–11:00 — Ping Gao (Rutgers University) [Online speaker]</strong></p>
+            <p><strong>Title:</strong> Pole-skipping of higher spin operators in CFT</p>
+            <p><strong>Abstract:</strong> Pole-skipping is an independent probe of quantum chaos beyond the Lyapunov exponent. In this talk, I will explain the pole-skipping of higher spin operators in a higher-dimensional CFT with large N. For such a CFT in the Regge limit, we will have non-maximal quantum chaos, which is associated with the leading Regge trajectory. For generic spin J, there exists a nontrivial two-piece rule for the distribution of pole-skipping points at both positive and negative imaginary frequencies. For the pole-skipping of an individual spin J operator, it has nothing to do with the non-maximal Lyapunov exponent. However, if we combine the infinite pole-skipping points with the largest imaginary frequency, we will surprisingly find that they form an analytic trajectory, which gives the non-maximal Lyapunov exponent. We conjecture this property holds for generic non-maximal chaotic systems and verify this conjecture in large q SYK chain.</p>
+          </div>
 
-<div id="content-wrapper">
-<main>
-<div id="inner">
-<h2>Title and Abstract</h2>
-<p>TBA</p>
-</div>
-</main>
-</div>
-</div>
-<div id="footer-container"></div>
-<script>fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer-container").innerHTML = data);</script>
+          <div class="talk">
+            <p><strong>11:30–12:00 — Wen-Xin Lai (Kavli Institute for Theoretical Sciences, University of Chinese Academy of Sciences)</strong></p>
+            <p><strong>Title:</strong> Entanglement Entropy in the String Theory Formulation of TTbar deformed CFTs</p>
+            <p><strong>Abstract:</strong> The TTbar deformation is a special type of "solvable" deformation. When applied to CFTs, the deformed theory shows signs of nonlocality and can be further reformulated as a string theory. Under this framework, we develop worldsheet techniques to compute its entanglement entropy via a generalization of the replica trick in string theory. The result hints at a process where nonlocality is gradually introduced through the deformation and finally smooths out the UV cutoff of the original CFT. This is joint work in progress with Huajia Wang and Yongjiang Xu at KITS, Beijing.</p>
+          </div>
 
-</div>
+          <div class="talk">
+            <p><strong>13:30–14:30 — Takato Mori (Rikkyo University)</strong></p>
+            <p><strong>Title:</strong> Horizon causality from holographic scattering in asymptotically dS3</p>
+            <p><strong>Abstract:</strong> I will discuss causality on a holographic screen in static patch (SP) holography of asymptotically de Sitter spacetimes. SP holography is one proposal of dS holography, however, its boundary description is mysterious due to the lack of concrete models in three or higher dimensions. Nevertheless, we can argue various properties including causality without relying on the detail of the theory by employing a theorem that holds generically in holography — the connected wedge theorem. It assures from quantum information that entanglement on the boundary when direct scattering in the bulk does not have a local boundary analog. We argue that based on the theorem, the causality on the holographic screen for SP holography should be induced from a point on null infinities (either future or past, depending on the sign of the momentum). This hints us toward a connection between two different dS holography proposals, SP holography and dS/CFT. This talk is based on my work 2410.09050 with Victor Franken.</p>
+          </div>
 
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    });
-</script>
+          <div class="talk">
+            <p><strong>15:00–16:00 — Ling-Yan Hung (Tsinghua University) [Online speaker]</strong></p>
+            <p><strong>Title:</strong> It from ETH : Emergent Geometry from Large- BCFT Ensemble and Multi-interval Entanglement</p>
+            <p><strong>Abstract:</strong> In this talk, we study the ensemble average of boundary CFT (BCFT) data consistent with the bootstrap equations. We consider ensemble average of CFT path-integrals expressed as tensor networks of boundary changing operator (BCO) correlation functions using the formalism developed in arXiv:2210.12127, arXiv:2311.18005 and arXiv:2403.03179. We find a natural emergence of locality and a loop-sum structure reminiscent of lattice integrable models. In the presence of closed CFT operator insertions, generalized free fields emerge, with their correlation functions governed by the shortest paths connecting the insertions. Importantly, the BCFT ensemble average also leads to an exact tensor network that reproduces the precise multi-interval Ryu-Takayanagi formula.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>16:30–17:00 — Kotaro Tamaoka (Nihon University)</strong></p>
+            <p><strong>Title:</strong> TBA</p>
+            <p><strong>Abstract:</strong> TBA</p>
+          </div>
+
+          <h3 class="session-day">July 11 (Fri)</h3>
+          <div class="talk">
+            <p><strong>09:30–10:30 — Dongsheng Ge (Osaka University)</strong></p>
+            <p><strong>Title:</strong> Non-Factorizing Interface in the Two-Dimensional Long-Range Ising Model</p>
+            <p><strong>Abstract:</strong> The factorization proposal claims that the co-dimension one "pinning defect", on which a local relevant operator is integrated, factorizes the space into two halves in general conformal field theories in the infrared limit. In this letter, we study a two-dimensional long-range Ising model at criticality with a line defect or an interface, which physically corresponds to changing the local temperature on it. We show that in the perturbative regime, it is not factorizing even in the infrared limit. An intuitive explanation of the non-factorization is that the long-range Ising model is equivalent to a local conformal field theory in higher dimensions. In this picture, the space is still connected through the "extra dimension" across the defect line.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>11:00–12:00 — Cheng Peng (Kavli Institute for Theoretical Sciences, University of Chinese Academy of Sciences)</strong></p>
+            <p><strong>Title:</strong> D-commuting SYK model: building quantum chaos from integrable blocks</p>
+            <p><strong>Abstract:</strong> We construct a new quantum chaotic model by combining multiple copies of integrable commuting SYK models. As each copy of the commuting SYK model does not commute with others, this construction breaks the integrability of each commuting SYK and the model becomes a natural family demonstrating the emergence of quantum chaos. We study the spectrum of this model analytically in the double-scaled limit. As the number of copies tends to infinity, the spectrum becomes compact and equivalent to the regular SYK model. For finite $d$ copies, the spectrum is close to regular SYK model in UV but has an exponential tail $e^{E/T_c}$ in the IR. We identify the reciprocal of the exponent in the tail as a critical temperature $T_c$, above which the model should be quantum chaotic. $T_c$ monotonically decreases as $d$ increases, which expands the chaotic regime over the non-chaotic regime. We propose the existence of a phase transition around $T_c$, and the dynamics should be very different in two phases. We further carry out numeric analysis at finite $d$, which supports for our proposal.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>13:30–14:30 — Kanato Goto (Osaka University)</strong></p>
+            <p><strong>Title:</strong> TBA</p>
+            <p><strong>Abstract:</strong> TBA</p>
+          </div>
+
+          <h3 class="session-day">July 12 (Sat)</h3>
+          <div class="talk">
+            <p><strong>09:45–10:45 — Song He (Ningbo University) [Online speaker]</strong></p>
+            <p><strong>Title:</strong> Holographic Correlators of Boundary/Crosscap CFTs in Two Dimensions</p>
+            <p><strong>Abstract:</strong> This work explores holographic correlators within the frameworks of two-dimensional Boundary Conformal Field Theory (BCFT) and Crosscap Conformal Field Theory (XCFT). Utilizing the AdS/CFT correspondence, we compute stress tensor correlators in BCFT, considering both tensionless and tensionful end-of-the-world (EOW) brane scenarios. We derive recurrence relations for two-point and three-point correlators and examine the impact of non-zero brane tension on correlators. Extending these results, we investigate the holographic duals of XCFTs, presenting explicit scalar and stress tensor correlator computations on projective geometries such as RP^2. Additionally, we analyze stress tensor correlators at a finite cutoff, uncovering deformations to one-point and two-point functions induced by the cutoff. Our findings provide novel insights into the holographic structures of BCFT and XCFT while laying the groundwork for future research into higher-dimensional extensions.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>11:00–11:30 — Weibo Mao (Kavli Institute for Theoretical Sciences, University of Chinese Academy of Sciences)</strong></p>
+            <p><strong>Title:</strong> Rift-Burning Mirror: Gcometrising the Hayden-Preskill Protocol in $AdS_3/CFT_2$</p>
+            <p><strong>Abstract:</strong> We present a novel geometric construction of the Hayden–Preskill information recovery protocol within the context of two-dimensional conformal field theory (CFT₂), motivated by the AdS₃/CFT₂ correspondence. By implementing vertical slits on thermal cylinders and mapping the resulting path-integral states to multiply connected circular domains, we model the injection of quantum information into a black hole and its retrieval from Hawking radiation. The conformal mapping involves the Schottky–Klein prime function and provides access to arc-slit annulus geometries beyond the scope of linear slit methods. In this setup, mutual information between the reference observer and the post-radiation black hole serves as a diagnostic for information recovery. Our analysis reveals that this mutual information decreases precisely when the length of the emitted radiation subsystem exceeds that of the reference system, realizing the characteristic mirror behavior predicted by the Hayden–Preskill protocol. Both rational CFT calculations (free Dirac fermions) and holographic entanglement entropy from bulk geodesics confirm this transition. Our results offer a concrete path-integral realization of information mirroring and its geometric diagnostics in AdS₃/CFT₂.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>13:00–14:00 — Tomonori Ugajin (Rikkyo University)</strong></p>
+            <p><strong>Title:</strong> TBA</p>
+            <p><strong>Abstract:</strong> TBA</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>14:15–15:15 — Xian-Hui Ge (Shanghai University)</strong></p>
+            <p><strong>Title:</strong> Resolving the Replica Problem with Supersymmetric SYK Models</p>
+            <p><strong>Abstract:</strong> We investigate the SYK model with arbitrary replicas and solvable replica wormholes. First, we consider copies of non-supersymmetric SYK models with additional random interactions. We find this method is solvable under special conditions. Then we introduce the $N=1$ supersymmetric SYK model and use the fractal symmetry to cover the replica structure. We study the dynamics in Lorentzian time and plotted the effective action evolving over time. Furthermore, we focus on the emergent superconformal symmetry in the low-energy limit with replicas. We consider corresponding constraints on $\mathcal{N}=1$ super-JT gravity for holographic matching. We also verify the modular entropy, n-dependence of the relative entropy, and capacity of entanglement using fully diagonal methods.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>15:30–16:00 — Akihiro Miyata (Yukawa Institute for Theoretical Physics)</strong></p>
+            <p><strong>Title:</strong> TBA</p>
+            <p><strong>Abstract:</strong> TBA</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>16:15–17:15 — Shan-Ming Ruan (Peking University)</strong></p>
+            <p><strong>Title:</strong> Universal Time Evolution of Holographic Complexity</p>
+            <p><strong>Abstract:</strong> As the holographic dual of quantum complexity, holographic complexity encodes the geometric structure of black hole interiors. Motivated by the complexity=anything proposal, we introduce the spectral representation of infinite generating functions for both codimension-one and codimensionzero holographic complexity measures. The time evolution of these generating functions typically presents a slope-ramp-plateau structure, analogous to the spectral form factor in chaotic quantum systems. Quantum complexity in such chaotic systems exhibits universal time evolution characterized by long-time linear growth and a saturation plateau at late times. Using generating functions, we show that this universal time evolution of complexity for generic holographic systems is driven by spectral statistics arising from random matrix universality and a particular pole structure of matrix elements of the generating functions in the energy eigenbasis. By applying the residue theorem, we further prove that the existence of this pole is also a necessary condition for the linear growth of quantum complexity. Furthermore, we show that the late-time plateau of complexity is a consequence of the spectral level repulsion that is a hallmark of quantum chaos.</p>
+          </div>
+
+          <h3 class="session-day">July 13 (Sun)</h3>
+          <div class="talk">
+            <p><strong>10:00–11:00 — Yu Tian (Kavli Institute for Theoretical Sciences, University of Chinese Academy of Sciences)</strong></p>
+            <p><strong>Title:</strong> Non-equilibrium physics in holography</p>
+            <p><strong>Abstract:</strong> Holography is an important tool to deal with certain problems in physics, in particular non-equilibrium physics. In this talk, I will focus on the applications of holography in two respects of non-equilibrium physics. One is at the probe limit level, mainly useful for superfluid systems. The other is at the fully backreacted level, needed in more general situations.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>11:30–12:00 — Yu-Xuan Zhang (Kavli Institute for Theoretical Sciences, University of Chinese Academy of Sciences)</strong></p>
+            <p><strong>Title:</strong> On the Entanglement and Energy Dynamics of Continuous Floquet-driven CFTs</p>
+            <p><strong>Abstract:</strong> A key approach to studying non-equilibrium quantum many-body systems is to suddenly alter their Hamiltonian and observe the resulting dynamical evolution. A single change is called a "quench", while periodic changes are termed "Floquet driving". Recently, Floquet driving protocols in two-dimensional conformal field theories (CFTs) have attracted widespread attention due to their exact solvability and rich phase structure. However, most studies are limited to discrete-type driving (e.g., as a square wave) and the associated stroboscopic dynamics (i.e., evolution at integer multiples of the driving period). A key obstacle is that a generic continuous driving is rarely analytically tractable. In this talk, I will introduce a class of exactly solvable continuous Floquet driving protocols. I will discuss the energy and entanglement dynamics under these protocols in 2D CFTs, as well as their holographic duals. Crucially, the results show that stroboscopic dynamics, if overinterpreted, can qualitatively misrepresent the system's true continuous-time evolution.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>13:30–14:30 — Masamichi Miyaji (Yukawa Institute for Theoretical Physics)</strong></p>
+            <p><strong>Title:</strong> Aspects of Non-perturbative Hilbert Space in Gravity</p>
+            <p><strong>Abstract:</strong> Recently, from the identification of matrix integral and the gravitational path integral, we had a significant progress in our understanding of non-perturbative correspondence between bulk geometry and the boundary quantum state. In this talk, we will explain aspects of such mapping between black hole interior geometry and the boundary quantum state, constructing "length operator" in the boundary theory. Using such operator, we confirm the Susskind's conjecture that the late time two sided BH is equal superposition of black holes and white holes. Furthermore, this program can be extended to the ETH matrix model for double-scaled SYK model, whose gravity dual has discrete structure, where we can see a connection to the Krylov complexity and its generalizations.</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>15:00–16:00 — Hong Zhang (Shanghai University)</strong></p>
+            <p><strong>Title:</strong> TBA</p>
+            <p><strong>Abstract:</strong> TBA</p>
+          </div>
+
+          <div class="talk">
+            <p><strong>16:30–17:00 — Masataka Watanabe (Nagoya University)</strong></p>
+            <p><strong>Title:</strong> TBA</p>
+            <p><strong>Abstract:</strong> TBA</p>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+    <div id="footer-container"></div>
+    <script>
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    </script>
+  </div>
+</div>
 </body>
 </html>
